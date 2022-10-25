@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalFileHashTool"
         mc:Ignorable="d"
-        Title="计算Hash值" Height="450" Width="800">
+        Title="计算Hash值" Height="400" Width="600">
     <Window.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="VerticalAlignment" Value="Center"></Setter>
@@ -40,10 +40,10 @@
             <Button x:Name="btnSelectFile" Grid.Row="0" Height="20" Width="60" Content="选择文件" Margin="10 0 10 0" Click="btnSelectFile_Click"></Button>
             <TextBlock Grid.Row="1" Text="输入内容" VerticalAlignment="Center"></TextBlock>
         </Grid>
-        <TextBox x:Name="txtContent" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="txtContent" Grid.Column="1" Margin="10" FontSize="14"/>
 
         <TextBlock Text="Hash值" Grid.Row="1"></TextBlock>
-        <TextBox x:Name="txtHash" Grid.Column="1" Grid.Row="1" Height="Auto" IsReadOnly="True"
+        <TextBox x:Name="txtHash" Grid.Column="1" Grid.Row="1" Height="Auto" IsReadOnly="True" FontSize="14"
                  TextWrapping="Wrap" Margin="10" VerticalAlignment="Stretch" VerticalContentAlignment="Top" Padding="5"></TextBox>
 
         <Grid Grid.Row="2" Grid.ColumnSpan="2">
